@@ -1,0 +1,17 @@
+El patrón Transferir objeto se usa cuando queremos pasar datos con múltiples atributos de una sola vez del cliente al servidor. 
+El objeto de transferencia también se conoce como objeto de valor. Transfer Object es una clase POJO simple que tiene métodos 
+getter/setter y es serializable para que pueda transferirse a través de la red. No tiene ningún comportamiento. 
+La clase empresarial del lado del servidor normalmente obtiene datos de la base de datos y llena el POJO y lo envía al cliente o lo pasa por valor. Para el cliente, 
+el objeto de transferencia es de solo lectura. El cliente puede crear su propio objeto de transferencia y pasarlo al servidor para actualizar 
+los valores en la base de datos de una sola vez. A continuación se muestran las entidades de este tipo de patrón de diseño.
+
+Objeto comercial: el servicio comercial llena el objeto de transferencia con datos.
+
+Objeto de transferencia: POJO simple que tiene métodos para establecer / obtener atributos solo.
+
+Cliente: el cliente solicita o envía Transfer Object a Business Object.
+
+Implementación
+Vamos a crear un StudentBO como Business Object, Student como Transfer Object que represente a nuestras entidades.
+
+TransferObjectPatternDemo, nuestra clase de demostración, actúa como un cliente aquí y utilizará StudentBO y Student para demostrar Transfer Object Design Pattern.

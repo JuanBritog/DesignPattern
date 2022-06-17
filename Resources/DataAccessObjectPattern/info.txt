@@ -1,0 +1,14 @@
+El patrón de objeto de acceso a datos o patrón DAO se utiliza para separar las operaciones o la API de acceso a datos de bajo nivel de los servicios comerciales de alto nivel. 
+Los siguientes son los participantes en el patrón de objetos de acceso a datos.
+
+Interfaz de objeto de acceso a datos: esta interfaz define las operaciones estándar que se realizarán en un objeto modelo.
+
+Clase concreta de objeto de acceso a datos: esta clase implementa la interfaz anterior.
+ Esta clase es responsable de obtener datos de una fuente de datos que puede ser una base de datos/xml o cualquier otro mecanismo de almacenamiento.
+
+Objeto modelo u objeto de valor: este objeto es un POJO simple que contiene métodos get/set para almacenar datos recuperados mediante la clase DAO.
+
+Implementación
+Vamos a crear un objeto Student que actúe como un modelo o un objeto de valor. StudentDao es una interfaz de objeto de acceso a datos. 
+StudentDaoImpl es una clase concreta que implementa la interfaz de objeto de acceso a datos. DaoPatternDemo, nuestra clase de demostración, 
+utilizará StudentDao para demostrar el uso del patrón de objetos de acceso a datos.

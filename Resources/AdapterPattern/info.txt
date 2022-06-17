@@ -1,0 +1,20 @@
+El patrón de adaptador funciona como un puente entre dos interfaces incompatibles. 
+Este tipo de patrón de diseño se incluye en el patrón estructural, ya que este patrón combina la capacidad de dos interfaces independientes.
+
+Este patrón involucra una sola clase que es responsable de unir funcionalidades de interfaces independientes o incompatibles. 
+Un ejemplo de la vida real podría ser el caso de un lector de tarjetas que actúa como un adaptador entre la tarjeta de memoria y una computadora portátil. Usted conecta 
+la tarjeta de memoria en el lector de tarjetas y el lector de tarjetas en la computadora portátil para que la tarjeta de memoria se pueda leer a través de la computadora portátil.
+
+Estamos demostrando el uso del patrón Adapter a través del siguiente ejemplo en el que un dispositivo reproductor de audio solo puede reproducir archivos mp3 
+y quiere usar un reproductor de audio avanzado capaz de reproducir archivos vlc y mp4.
+
+Implementación
+Tenemos una interfaz MediaPlayer y una clase concreta AudioPlayer implementando la interfaz MediaPlayer. AudioPlayer puede reproducir archivos de audio en formato mp3 de forma predeterminada.
+
+Tenemos otra interfaz AdvancedMediaPlayer y clases concretas que implementan la interfaz AdvancedMediaPlayer. Estas clases pueden reproducir archivos en formato vlc y mp4.
+
+Queremos que AudioPlayer también reproduzca otros formatos. Para lograr esto, hemos creado una clase de adaptador MediaAdapter que 
+implementa la interfaz MediaPlayer y usa objetos AdvancedMediaPlayer para reproducir el formato requerido.
+
+AudioPlayer utiliza la clase de adaptador MediaAdapter pasándole el tipo de audio deseado sin conocer la clase real que puede reproducir el formato deseado. 
+AdapterPatternDemo, nuestra clase de demostración usará la clase AudioPlayer para reproducir varios formatos.

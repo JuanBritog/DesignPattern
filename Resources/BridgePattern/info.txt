@@ -1,0 +1,13 @@
+Bridge se usa cuando necesitamos desacoplar una abstracción de su implementación para que los dos puedan variar de forma independiente. 
+Este tipo de patrón de diseño se incluye en el patrón estructural, 
+ya que este patrón desacopla la clase de implementación y la clase abstracta al proporcionar una estructura de puente entre ellas.
+
+Este patrón involucra una interfaz que actúa como un puente que hace que la funcionalidad de las clases concretas sea independiente de las clases del implementador de la interfaz. 
+Ambos tipos de clases se pueden alterar estructuralmente sin afectarse entre sí.
+
+Estamos demostrando el uso del patrón Bridge a través del siguiente ejemplo en el que se puede dibujar un círculo en diferentes colores usando 
+el mismo método de clase abstracta pero diferentes clases de implementadores de puente.
+
+Implementación
+Tenemos una interfaz DrawAPI que actúa como un puente implementador y clases concretas RedCircle, GreenCircle implementando la interfaz DrawAPI. Shape es una clase abstracta 
+y utilizará el objeto de DrawAPI. BridgePatternDemo, nuestra clase de demostración usará la clase Shape para dibujar círculos de diferentes colores.

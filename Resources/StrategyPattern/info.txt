@@ -1,0 +1,9 @@
+En el patrón de estrategia, el comportamiento de una clase o su algoritmo se puede cambiar en tiempo de ejecución. Este tipo de patrón de diseño se incluye en el patrón de comportamiento.
+
+En el patrón de estrategia, creamos objetos que representan varias estrategias y un objeto de contexto cuyo comportamiento varía según su objeto de estrategia. 
+El objeto de estrategia cambia el algoritmo de ejecución del objeto de contexto.
+
+Implementación
+Vamos a crear una interfaz de estrategia definiendo una acción y clases de estrategia concretas implementando la interfaz de estrategia. El contexto es una clase que utiliza una estrategia.
+
+StrategyPatternDemo, nuestra clase de demostración, usará objetos de contexto y estrategia para demostrar cambios en el comportamiento del contexto en función de la estrategia que implementa o usa.

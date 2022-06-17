@@ -1,0 +1,14 @@
+El patrón Decorator permite al usuario agregar nuevas funciones a un objeto existente sin alterar su estructura. Este tipo de patrón de diseño se incluye en el patrón estructural, 
+ya que este patrón actúa como un envoltorio para la clase existente.
+
+Este patrón crea una clase de decorador que envuelve la clase original y proporciona una funcionalidad adicional que mantiene intacta la firma de los métodos de clase.
+
+Estamos demostrando el uso del patrón decorador a través del siguiente ejemplo en el que decoraremos una forma con algún color sin alterar la clase de forma.
+
+Implementación
+Vamos a crear una interfaz Shape y clases concretas implementando la interfaz Shape. 
+Luego crearemos una clase de decorador abstracta ShapeDecorator implementando la interfaz Shape y teniendo el objeto Shape como su variable de instancia.
+
+RedShapeDecorator es una clase concreta que implementa ShapeDecorator.
+
+DecoratorPatternDemo, nuestra clase de demostración usará RedShapeDecorator para decorar objetos Shape.

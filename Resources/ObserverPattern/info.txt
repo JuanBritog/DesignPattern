@@ -1,0 +1,9 @@
+El patrón de observador se utiliza cuando existe una relación de uno a muchos entre los objetos, por ejemplo,
+ si se modifica un objeto, sus objetos dependientes se notificarán automáticamente. El patrón del observador cae en la categoría de patrón de comportamiento.
+
+Implementación
+El patrón de observador utiliza tres clases de actores. Sujeto, observador y cliente. 
+El sujeto es un objeto que tiene métodos para adjuntar y separar observadores de un objeto cliente. Hemos creado una clase abstracta Observer 
+y una clase concreta Sujeto que es una extensión de la clase Observer.
+
+ObserverPatternDemo, nuestra clase de demostración, utilizará el sujeto y el objeto de clase concreto para mostrar el patrón del observador en acción.

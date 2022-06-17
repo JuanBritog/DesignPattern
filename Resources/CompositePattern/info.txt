@@ -1,0 +1,11 @@
+El patrón compuesto se usa cuando necesitamos tratar un grupo de objetos de manera similar como un solo objeto. 
+El patrón compuesto compone objetos en términos de una estructura de árbol para representar la jerarquía tanto parcial como total. Este tipo de patrón de diseño se incluye en el patrón estructural, 
+ya que este patrón crea una estructura de árbol de grupo de objetos.
+
+Este patrón crea una clase que contiene un grupo de sus propios objetos. Esta clase proporciona formas de modificar su grupo de mismos objetos.
+
+Estamos demostrando el uso del patrón compuesto a través del siguiente ejemplo en el que mostraremos la jerarquía de los empleados de una organización.
+
+Implementación
+Tenemos una clase Employee que actúa como una clase de actor de patrón compuesto. CompositePatternDemo, 
+nuestra clase de demostración usará la clase Empleado para agregar una jerarquía a nivel de departamento e imprimir todos los empleados.

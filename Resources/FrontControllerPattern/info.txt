@@ -1,0 +1,15 @@
+El patrón de diseño del controlador frontal se usa para proporcionar un mecanismo de manejo de solicitudes centralizado, de modo que 
+todas las solicitudes sean manejadas por un único controlador. Este controlador puede realizar la autenticación/autorización/registro o seguimiento de la solicitud y 
+luego pasar las solicitudes a los controladores correspondientes. A continuación se muestran las entidades de este tipo de patrón de diseño.
+
+Controlador frontal: controlador único para todo tipo de solicitudes que llegan a la aplicación (ya sea basada en la web o en el escritorio).
+
+Dispatcher: Front Controller puede usar un objeto de despachador que puede enviar la solicitud al controlador específico correspondiente.
+
+Vista: las vistas son el objeto para el que se realizan las solicitudes.
+
+Implementación
+Vamos a crear un FrontController y Dispatcher para que actúen como Front Controller y Dispatcher correspondientemente. HomeView y 
+StudentView representan varias vistas para las cuales las solicitudes pueden llegar al controlador frontal.
+
+FrontControllerPatternDemo, nuestra clase de demostración, utilizará FrontController para demostrar el patrón de diseño del controlador frontal.

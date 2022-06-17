@@ -1,0 +1,11 @@
+El patrón de comando es un patrón de diseño basado en datos y se incluye en la categoría de patrones de comportamiento. 
+Una solicitud se envuelve bajo un objeto como comando y se pasa al objeto invocador. 
+El objeto invocador busca el objeto apropiado que pueda manejar este comando y pasa el comando al objeto correspondiente que ejecuta el comando.
+
+Implementación
+Hemos creado una Orden de interfaz que actúa como un comando. Hemos creado una clase Stock que actúa como una solicitud. 
+Tenemos clases de comando concretas BuyStock y SellStock que implementan la interfaz de pedidos que realizará el procesamiento de comandos real. 
+Se crea una clase Broker que actúa como objeto invocador. Puede tomar y realizar pedidos.
+
+El objeto de intermediario utiliza un patrón de comando para identificar qué objeto ejecutará qué comando en función del tipo de comando. 
+CommandPatternDemo, nuestra clase de demostración, utilizará la clase Broker para demostrar el patrón de comando.

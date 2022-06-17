@@ -1,0 +1,9 @@
+Como sugiere el nombre, el patrón de cadena de responsabilidad crea una cadena de objetos receptores para una solicitud. Este patrón desacopla al remitente y 
+al receptor de una solicitud según el tipo de solicitud. Este patrón se incluye en los patrones de comportamiento.
+
+En este patrón, normalmente cada receptor contiene una referencia a otro receptor. Si un objeto no puede manejar la solicitud, pasa lo mismo al siguiente receptor y así sucesivamente.
+
+Implementación
+Hemos creado una clase abstracta AbstractLogger con un nivel de registro. Luego, hemos creado tres tipos de registradores que amplían AbstractLogger. 
+Cada registrador verifica el nivel del mensaje a su nivel e imprime en consecuencia; de lo contrario, no imprime ni pasa 
+el mensaje a su siguiente registrador.

@@ -1,0 +1,20 @@
+El patrón de diseño del localizador de servicios se usa cuando queremos ubicar varios servicios mediante la búsqueda JNDI. 
+Teniendo en cuenta el alto costo de buscar JNDI para un servicio, el patrón Service Locator utiliza la técnica de almacenamiento en caché. 
+La primera vez que se requiere un servicio, Service Locator busca en JNDI y almacena en caché el objeto de servicio. 
+La búsqueda adicional o el mismo servicio a través del Localizador de servicios se realiza en su caché, lo que mejora en gran medida el rendimiento de la aplicación. 
+A continuación se muestran las entidades de este tipo de patrón de diseño.
+
+Servicio - Servicio real que procesará la solicitud. La referencia de dicho servicio debe consultarse en el servidor JNDI.
+
+Contexto/Contexto inicial: el contexto JNDI lleva la referencia al servicio utilizado para fines de búsqueda.
+
+Localizador de servicios: el localizador de servicios es un único punto de contacto para obtener servicios mediante la búsqueda JNDI que almacena en caché los servicios.
+
+Caché - Caché para almacenar referencias de servicios para reutilizarlos
+
+Cliente: el cliente es el objeto que invoca los servicios a través de ServiceLocator.
+
+Implementación
+Vamos a crear un ServiceLocator, InitialContext, Cache, Service como varios objetos que representan nuestras entidades, Service1 y Service2 representan servicios concretos.
+
+ServiceLocatorPatternDemo, nuestra clase de demostración, actúa como un cliente aquí y usará ServiceLocator para demostrar el patrón de diseño del localizador de servicios.

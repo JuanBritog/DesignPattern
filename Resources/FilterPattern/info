@@ -1,0 +1,7 @@
+El patrón de filtro o patrón de criterios es un patrón de diseño que permite a los desarrolladores filtrar un conjunto de objetos utilizando diferentes criterios 
+y encadenándolos de forma desacoplada a través de operaciones lógicas.
+ Este tipo de patrón de diseño se incluye en el patrón estructural, ya que este patrón combina varios criterios para obtener un único criterio.
+
+Implementación
+Vamos a crear un objeto Person, una interfaz Criteria y clases concretas que implementen esta interfaz para filtrar la lista de objetos Person. 
+CriteriaPatternDemo, nuestra clase de demostración utiliza objetos Criteria para filtrar objetos Lista de personas en función de varios criterios y sus combinaciones.

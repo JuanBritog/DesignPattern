@@ -1,0 +1,7 @@
+El patrón Memento se utiliza para restaurar el estado de un objeto a un estado anterior. El patrón de recuerdo cae en la categoría de patrón de comportamiento.
+
+Implementación
+El patrón Memento utiliza tres clases de actores. Memento contiene el estado de un objeto que se va a restaurar. 
+El originador crea y almacena estados en los objetos Memento y el objeto Caretaker es responsable de restaurar el estado del objeto desde Memento. Hemos creado las clases Memento, Originator y CareTaker.
+
+MementoPatternDemo, nuestra clase de demostración, utilizará los objetos CareTaker y Originator para mostrar la restauración de los estados de los objetos.

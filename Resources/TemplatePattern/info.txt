@@ -1,0 +1,9 @@
+En el patrón de plantilla, una clase abstracta expone la(s) forma(s)/plantilla(s) definida(s) para ejecutar sus métodos. 
+Sus subclases pueden anular la implementación del método según sea necesario, pero la invocación debe ser de la misma manera definida por una clase abstracta. 
+Este patrón entra en la categoría de patrón de comportamiento.
+
+Implementación
+Vamos a crear una clase abstracta de juego que defina operaciones con un método de plantilla configurado para que sea final para que no se pueda anular. 
+Cricket y Football son clases concretas que amplían Game y anulan sus métodos.
+
+TemplatePatternDemo, nuestra clase de demostración, usará Game para demostrar el uso del patrón de plantilla.

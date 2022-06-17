@@ -1,0 +1,15 @@
+El patrón Builder construye un objeto complejo usando objetos simples y usando un enfoque paso a paso. 
+Este tipo de patrón de diseño se incluye en el patrón de creación, ya que proporciona una de las mejores formas de crear un objeto.
+
+Una clase Builder construye el objeto final paso a paso. Este constructor es independiente de otros objetos.
+
+Implementación
+Hemos considerado un caso de negocio de restaurante de comida rápida donde una comida típica podría ser una hamburguesa y una bebida fría. 
+La hamburguesa puede ser una hamburguesa vegetariana o una hamburguesa de pollo y se empaquetará en un envoltorio. La bebida fría puede ser una coca cola o una pepsi y se envasa en una botella.
+
+Vamos a crear una interfaz de elementos que represente alimentos como hamburguesas y bebidas frías y clases concretas que implementen la interfaz de elementos 
+y una interfaz de empaque que represente el empaque de alimentos y clases concretas que implementen la interfaz de empaque, ya que la hamburguesa se envasaría en un envoltorio y una bebida fría. 
+sería embalado como botella.
+
+Luego creamos una clase Meal que tiene ArrayList of Item y MealBuilder para crear diferentes tipos de objetos Meal combinando Item. BuilderPatternDemo, 
+nuestra clase de demostración utilizará MealBuilder para crear una comida.

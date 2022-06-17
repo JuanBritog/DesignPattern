@@ -1,0 +1,8 @@
+En el patrón proxy, una clase representa la funcionalidad de otra clase. Este tipo de patrón de diseño se incluye en el patrón estructural.
+
+En el patrón proxy, creamos un objeto que tiene un objeto original para interconectar su funcionalidad con el mundo exterior.
+
+Implementación
+Vamos a crear una interfaz de imagen y clases concretas que implementen la interfaz de imagen. ProxyImage es una clase de proxy para reducir el consumo de memoria de la carga de objetos RealImage.
+
+ProxyPatternDemo, nuestra clase de demostración, usará ProxyImage para que un objeto de imagen se cargue y muestre según sea necesario.

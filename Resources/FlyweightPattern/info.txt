@@ -1,0 +1,17 @@
+El patrón Flyweight se usa principalmente para reducir la cantidad de objetos creados y para disminuir el consumo de memoria y aumentar el rendimiento. 
+Este tipo de patrón de diseño se incluye en el patrón estructural, ya que este patrón proporciona formas de disminuir el número de objetos, 
+mejorando así la estructura de objetos de la aplicación.
+
+El patrón Flyweight intenta reutilizar objetos de tipo similar ya existentes almacenándolos y crea un nuevo objeto cuando no se encuentra ningún objeto coincidente.
+ Demostraremos este patrón dibujando 20 círculos de diferentes ubicaciones, pero crearemos solo 5 objetos. Solo hay 5 colores disponibles, por lo que la propiedad de color 
+ se usa para verificar los objetos circulares ya existentes.
+
+Implementación
+Vamos a crear una interfaz Shape y una clase concreta Circle implementando la interfaz Shape. Una clase de fábrica ShapeFactory se define como el siguiente paso.
+
+ShapeFactory tiene un HashMap de Circle que tiene la clave como color del objeto Circle. Cada vez que llega una solicitud para crear un círculo de un color particular a ShapeFactory, 
+verifica el objeto del círculo en su HashMap, si se encuentra el objeto de Circle, ese objeto se devuelve; de ​​lo contrario, se crea un nuevo objeto, se almacena en hashmap 
+para uso futuro y se devuelve a cliente.
+
+FlyWeightPatternDemo, nuestra clase de demostración, usará ShapeFactory para obtener un objeto Shape. Pasará información (rojo/verde/azul/negro/blanco) a
+ ShapeFactory para obtener el círculo del color deseado que necesita.

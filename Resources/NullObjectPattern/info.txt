@@ -1,0 +1,11 @@
+En el patrón de objeto nulo, un objeto nulo reemplaza la verificación de la instancia de objeto NULL. En lugar de poner si verifica un valor nulo,
+Objeto nulo refleja una relación de no hacer nada. Dicho objeto nulo también se puede usar para proporcionar un comportamiento predeterminado en caso de que los datos no estén disponibles.
+
+En el patrón de objeto nulo, creamos una clase abstracta que especifica varias operaciones a realizar,
+  Clases concretas que amplían esta clase y una clase de objeto nulo que no proporciona ninguna implementación de esta clase y se usará sin problemas cuando necesitemos verificar el valor nulo.
+
+Implementación
+Vamos a crear una clase abstracta AbstractCustomer que defina operaciones. Aquí el nombre del cliente y clases concretas extendiendo la clase AbstractCustomer.
+Se crea una clase de fábrica CustomerFactory para devolver objetos RealCustomer o NullCustomer en función del nombre del cliente que se le pasó.
+
+NullPatternDemo, nuestra clase de demostración, usará CustomerFactory para demostrar el uso del patrón Null Object.

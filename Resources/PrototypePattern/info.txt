@@ -1,0 +1,12 @@
+El patrón de prototipo se refiere a la creación de objetos duplicados teniendo en cuenta el rendimiento. 
+Este tipo de patrón de diseño se incluye en el patrón de creación, ya que proporciona una de las mejores formas de crear un objeto.
+
+Este patrón implica implementar una interfaz de prototipo que le indica que cree un clon del objeto actual. 
+Este patrón se utiliza cuando la creación de un objeto directamente es costosa. Por ejemplo, se va a crear un objeto después de una costosa operación de base de datos. 
+Podemos almacenar en caché el objeto, devolver su clon en la próxima solicitud y actualizar la base de datos cuando sea necesario, reduciendo así las llamadas a la base de datos.
+
+Implementación
+Vamos a crear una clase abstracta Shape y clases concretas que extiendan la clase Shape. 
+Una clase ShapeCache se define como el siguiente paso que almacena objetos de forma en un Hashtable y devuelve su clon cuando se le solicita.
+
+PrototypPatternDemo, nuestra clase de demostración usará la clase ShapeCache para obtener un objeto Shape.

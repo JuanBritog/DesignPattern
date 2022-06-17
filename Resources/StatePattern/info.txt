@@ -1,0 +1,8 @@
+En el patrón de estado, el comportamiento de una clase cambia según su estado. Este tipo de patrón de diseño se incluye en el patrón de comportamiento.
+
+En el patrón de estado, creamos objetos que representan varios estados y un objeto de contexto cuyo comportamiento varía a medida que cambia su objeto de estado.
+
+Implementación
+Vamos a crear una interfaz de estado definiendo una acción y clases de estado concretas implementando la interfaz de estado. El contexto es una clase que lleva un Estado.
+
+StatePatternDemo, nuestra clase de demostración, usará objetos de contexto y estado para demostrar el cambio en el comportamiento del contexto según el tipo de estado en el que se encuentra.

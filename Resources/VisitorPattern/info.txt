@@ -1,0 +1,10 @@
+En el patrón Visitor, usamos una clase de visitante que cambia el algoritmo de ejecución de una clase de elemento. 
+De esta manera, el algoritmo de ejecución del elemento puede variar a medida que varía el visitante. 
+Este patrón entra en la categoría de patrón de comportamiento. Según el patrón, el objeto del elemento tiene que aceptar el objeto del visitante
+ para que el objeto del visitante maneje la operación en el objeto del elemento.
+
+Implementación
+Vamos a crear una interfaz ComputerPart que defina la operación de aceptación. Teclado, Ratón, Monitor y Computadora son clases concretas que implementan la interfaz ComputerPart. 
+Definiremos otra interfaz ComputerPartVisitor que definirá las operaciones de una clase visitante. La computadora usa un visitante concreto para realizar la acción correspondiente.
+
+VisitorPatternDemo, nuestra clase de demostración, utilizará las clases Computer y ComputerPartVisitor para demostrar el uso del patrón de visitante.

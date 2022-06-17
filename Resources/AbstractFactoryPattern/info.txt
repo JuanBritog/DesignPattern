@@ -1,0 +1,12 @@
+Los patrones de Abstract Factory funcionan en torno a una superfábrica que crea otras fábricas. 
+Esta fábrica también se denomina fábrica de fábricas. Este tipo de patrón de diseño se incluye en el patrón de creación, ya que proporciona una de las mejores formas de crear un objeto.
+
+En el patrón Abstract Factory, una interfaz es responsable de crear una fábrica de objetos relacionados sin especificar explícitamente sus clases. 
+Cada fábrica generada puede dar los objetos según el patrón de fábrica.
+
+Implementación
+Vamos a crear una interfaz Shape y una clase concreta que la implemente. Creamos una clase de fábrica abstracta AbstractFactory como siguiente paso. 
+Se define la clase de fábrica ShapeFactory, que amplía AbstractFactory. Se crea una clase de creador/generador de fábrica FactoryProducer.
+
+AbstractFactoryPatternDemo, nuestra clase de demostración usa FactoryProducer para obtener un objeto AbstractFactory. 
+Pasará información (CÍRCULO / RECTÁNGULO / CUADRADO para Forma) a AbstractFactory para obtener el tipo de objeto que necesita.

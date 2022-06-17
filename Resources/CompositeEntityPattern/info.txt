@@ -1,0 +1,16 @@
+El patrón de delegado empresarial se utiliza para desacoplar el nivel de presentación y el nivel empresarial. 
+Básicamente se utiliza para reducir la comunicación o la funcionalidad de búsqueda remota al código de nivel empresarial en el código de nivel de presentación. 
+En el nivel empresarial tenemos las siguientes entidades.
+
+Cliente: el código de nivel de presentación puede ser JSP, servlet o código Java de interfaz de usuario.
+
+Business Delegate: una clase de punto de entrada único para que las entidades cliente proporcionen acceso a los métodos de Business Service.
+
+Servicio de búsqueda: el objeto de servicio de búsqueda es responsable de obtener una implementación comercial relativa y proporcionar acceso de objeto comercial al objeto de delegado comercial.
+
+Servicio comercial: interfaz de servicio comercial. Las clases concretas implementan este servicio empresarial para proporcionar una lógica de implementación empresarial real.
+
+Implementación
+Vamos a crear un Cliente, BusinessDelegate, BusinessService, LookUpService, JMSService y EJBService que representan varias entidades de patrones de Business Delegate.
+
+BusinessDelegatePatternDemo, nuestra clase de demostración, utilizará BusinessDelegate y Client para demostrar el uso del patrón Business Delegate.

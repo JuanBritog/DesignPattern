@@ -1,0 +1,19 @@
+El patrón de diseño de filtro de interceptación se usa cuando queremos hacer algún preprocesamiento/postprocesamiento con solicitud o respuesta de la aplicación. 
+Los filtros se definen y aplican en la solicitud antes de pasar la solicitud a la aplicación de destino real. 
+Los filtros pueden realizar la autenticación/autorización/registro o seguimiento de la solicitud y luego pasar las solicitudes a los controladores correspondientes. 
+A continuación se muestran las entidades de este tipo de patrón de diseño.
+
+Filtro: filtro que realizará determinada tarea antes o después de la ejecución de la solicitud por parte del controlador de solicitudes.
+
+Cadena de filtros: la cadena de filtros lleva múltiples filtros y ayuda a ejecutarlos en un orden definido en el objetivo.
+
+Destino: el objeto de destino es el controlador de solicitudes.
+
+Administrador de filtros: el administrador de filtros administra los filtros y la cadena de filtros.
+
+Cliente: el cliente es el objeto que envía la solicitud al objeto de destino.
+
+Implementación
+Vamos a crear un FilterChain, FilterManager, Target, Client como varios objetos que representan nuestras entidades.
+
+InterceptingFilterDemo, nuestra clase de demostración, usará Client para demostrar el patrón de diseño de filtro interceptor.

@@ -1,0 +1,10 @@
+El patrón de fábrica es uno de los patrones de diseño más utilizados en Java. 
+Este tipo de patrón de diseño se incluye en el patrón de creación, ya que proporciona una de las mejores formas de crear un objeto.
+
+En el patrón Factory, creamos un objeto sin exponer la lógica de creación al cliente y nos referimos a un objeto recién creado usando una interfaz común.
+
+Implementación
+Vamos a crear una interfaz Shape y clases concretas implementando la interfaz Shape. Una clase de fábrica ShapeFactory se define como el siguiente paso.
+
+FactoryPatternDemo, nuestra clase de demostración usará ShapeFactory para obtener un objeto Shape. 
+Pasará información (CÍRCULO / RECTÁNGULO / CUADRADO) a ShapeFactory para obtener el tipo de objeto que necesita.

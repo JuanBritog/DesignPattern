@@ -1,0 +1,9 @@
+El patrón de intérprete proporciona una forma de evaluar la gramática o la expresión del lenguaje. 
+Este tipo de patrón se incluye en el patrón de comportamiento. Este patrón implica implementar una interfaz de expresión que indica interpretar un contexto particular. 
+Este patrón se utiliza en el análisis de SQL, el motor de procesamiento de símbolos, etc.
+
+Implementación
+Vamos a crear una interfaz Expression y clases concretas implementando la interfaz Expression. 
+Se define una clase TerminalExpression que actúa como intérprete principal del contexto en cuestión. Otras clases OrExpression, AndExpression se utilizan para crear expresiones combinacionales.
+
+InterpreterPatternDemo, nuestra clase de demostración, utilizará la clase Expression para crear reglas y demostrar el análisis de expresiones.
